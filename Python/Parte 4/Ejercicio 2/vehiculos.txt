@@ -1,0 +1,2 @@
+Color azul, 4 ruedas
+Color rojo, 3 ruedas
