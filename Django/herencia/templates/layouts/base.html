@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+        {%block title%}
+            
+        {%endblock%}
+        </title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        {% block styles  %}
+
+        {% endblock  %}
+    </head>
+
+<body>
+<nav>
+
+    <ul>
+        <h3>Menu</h3>
+        <li><a href="#">Herencia</a></li>
+        <li><a href="#">Otra</a></li>
+        <li><a href="#">Ejemplo</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+    {% block content  %}
+
+    
+     {% endblock  %}
+    
+    
+</main>
+
+<footer>
+    <p>Este es el pie de página</p>
+</footer>
+{%block scripts%}
+
+{%endblock%}
+</body>
+
+</html>
