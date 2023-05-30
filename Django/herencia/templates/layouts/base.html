@@ -16,17 +16,8 @@
     </head>
 
 <body>
-<nav>
 
-    <ul>
-        <h3>Menu</h3>
-        <li><a href="#">Herencia</a></li>
-        <li><a href="#">Otra</a></li>
-        <li><a href="#">Ejemplo</a></li>
-
-    </ul>
-
-</nav>
+    {% include './partials/menu.html' %}
 
 <main>
     {% block content  %}
@@ -37,9 +28,8 @@
     
 </main>
 
-<footer>
-    <p>Este es el pie de página</p>
-</footer>
+{% include "./partials/footer.html" %}
+
 {%block scripts%}
 
 {%endblock%}
