@@ -1,0 +1,11 @@
+{% load static %}
+
+<nav>
+    <img src="{% static 'img/logo.png' %}" alt="logo" id="logo" width="64">
+    <ul>
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+        
+    </ul>
+
+</nav>
